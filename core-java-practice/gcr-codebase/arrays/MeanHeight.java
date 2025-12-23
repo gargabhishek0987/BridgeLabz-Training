@@ -17,6 +17,6 @@ public class MeanHeight {
 
         double mean = sum / 11;
 
-        System.out.println("The mean height of the football team is %.2f cm", mean);
+        System.out.println("The mean height of the football team is %.2f cm"+ mean);
     }
 }
