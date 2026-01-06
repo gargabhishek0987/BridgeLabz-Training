@@ -13,7 +13,7 @@ public class RemoveDuplicatesPreservingOrder {
         Set<T> seen = new LinkedHashSet<>();
         List<T> result = new ArrayList<>();
         for (T element : list) {
-            if (seen.add(element)) { // add returns true if the element was not already in the set
+            if (seen.add(element)) {
                 result.add(element);
             }
         }
@@ -26,7 +26,6 @@ public class RemoveDuplicatesPreservingOrder {
         List<Integer> result1 = removeDuplicates(list1);
         System.out.println("List after removing duplicates: " + result1);
 
-        System.out.println("\n----------------------------------------\n");
 
         List<String> list2 = Arrays.asList("apple", "banana", "apple", "orange", "banana", "grape");
         System.out.println("Original List: " + list2);

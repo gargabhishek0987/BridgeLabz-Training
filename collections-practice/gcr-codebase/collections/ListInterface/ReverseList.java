@@ -6,7 +6,6 @@ import java.util.List;
 
 public class ReverseList {
 
-    // Method to reverse a List without using built-in reverse methods
     public static <T> List<T> reverseList(List<T> list) {
         List<T> reversedList = new ArrayList<>();
         for (int i = list.size() - 1; i >= 0; i--) {
@@ -16,7 +15,6 @@ public class ReverseList {
     }
 
     public static void main(String[] args) {
-        // Example with ArrayList
         List<Integer> arrayList = new ArrayList<>();
         arrayList.add(1);
         arrayList.add(2);
@@ -28,9 +26,7 @@ public class ReverseList {
         List<Integer> reversedArrayList = reverseList(arrayList);
         System.out.println("Reversed ArrayList: " + reversedArrayList);
 
-        System.out.println("\n----------------------------------------\n");
 
-        // Example with LinkedList
         List<String> linkedList = new LinkedList<>();
         linkedList.add("A");
         linkedList.add("B");

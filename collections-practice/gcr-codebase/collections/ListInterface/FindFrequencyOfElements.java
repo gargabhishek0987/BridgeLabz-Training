@@ -7,7 +7,6 @@ import java.util.Map;
 
 public class FindFrequencyOfElements {
 
-    // Method to count the frequency of each element in a list of strings
     public static Map<String, Integer> findFrequency(List<String> list) {
         Map<String, Integer> frequencyMap = new HashMap<>();
         for (String element : list) {
@@ -23,7 +22,6 @@ public class FindFrequencyOfElements {
         Map<String, Integer> result = findFrequency(inputList);
         System.out.println("Frequency Map: " + result);
 
-        System.out.println("\n----------------------------------------\n");
 
         List<String> anotherList = Arrays.asList("cat", "dog", "cat", "bird", "dog", "cat", "fish");
         System.out.println("Original List: " + anotherList);

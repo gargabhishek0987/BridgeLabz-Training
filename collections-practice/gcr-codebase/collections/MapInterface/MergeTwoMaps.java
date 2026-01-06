@@ -5,16 +5,13 @@ import java.util.Map;
 
 public class MergeTwoMaps {
 
-    // Method to merge two maps. If a key exists in both maps, the value from map2 will overwrite map1's value.
     public static <K, V> Map<K, V> mergeMaps(Map<K, V> map1, Map<K, V> map2) {
         Map<K, V> mergedMap = new HashMap<>();
 
-        // Add all entries from map1
         if (map1 != null) {
             mergedMap.putAll(map1);
         }
 
-        // Add all entries from map2. This will overwrite existing keys from map1.
         if (map2 != null) {
             mergedMap.putAll(map2);
         }
@@ -22,7 +19,6 @@ public class MergeTwoMaps {
         return mergedMap;
     }
 
-    // Method to merge two maps with a custom merge function for conflicting keys
     public static <K, V> Map<K, V> mergeMapsWithFunction(Map<K, V> map1, Map<K, V> map2, java.util.function.BiFunction<V, V, V> mergeFunction) {
         Map<K, V> mergedMap = new HashMap<>();
 
@@ -38,7 +34,6 @@ public class MergeTwoMaps {
     }
 
     public static void main(String[] args) {
-        // Example 1: Simple merge (map2 overwrites map1)
         Map<String, Integer> mapA = new HashMap<>();
         mapA.put("A", 1);
         mapA.put("B", 2);
@@ -53,9 +48,7 @@ public class MergeTwoMaps {
         Map<String, Integer> merged1 = mergeMaps(mapA, mapB);
         System.out.println("Merged Map (simple): " + merged1);
 
-        System.out.println("\n----------------------------------------\n");
 
-        // Example 2: Merge with custom function (sum values for conflicting keys)
         Map<String, Integer> mapC = new HashMap<>();
         mapC.put("apple", 5);
         mapC.put("banana", 10);
@@ -69,9 +62,7 @@ public class MergeTwoMaps {
         Map<String, Integer> merged2 = mergeMapsWithFunction(mapC, mapD, (oldValue, newValue) -> oldValue + newValue);
         System.out.println("Merged Map (sum values): " + merged2);
 
-        System.out.println("\n----------------------------------------\n");
 
-        // Example 3: Merge with custom function (keep value from map1 for conflicting keys)
         Map<String, String> mapE = new HashMap<>();
         mapE.put("key1", "value1");
         mapE.put("key2", "value2");
@@ -85,9 +76,7 @@ public class MergeTwoMaps {
         Map<String, String> merged3 = mergeMapsWithFunction(mapE, mapF, (oldValue, newValue) -> oldValue);
         System.out.println("Merged Map (keep old value): " + merged3);
 
-        System.out.println("\n----------------------------------------\n");
 
-        // Example 4: Merging with null maps
         Map<String, Integer> mapG = new HashMap<>();
         mapG.put("X", 100);
 

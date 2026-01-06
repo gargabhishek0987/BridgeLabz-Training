@@ -7,15 +7,11 @@ import java.util.TreeMap;
 
 public class ShoppingCart {
 
-    // HashMap to store product prices (productId -> price)
     private Map<String, Double> productPrices;
 
-    // LinkedHashMap to maintain the order of items added (productId -> quantity)
     private Map<String, Integer> itemsInCartLinked;
 
-    // TreeMap to display items sorted by price (Product object -> quantity)
-    // Note: TreeMap sorts by key. To sort by price, Product class must implement Comparable<Product>
-    // or a custom Comparator must be provided.
+   
     private Map<Product, Integer> itemsInCartTree;
 
     // A helper map to quickly get Product objects by their ID
@@ -27,20 +23,15 @@ public class ShoppingCart {
         itemsInCartTree = new TreeMap<>();
         productCatalog = new HashMap<>();
 
-        // Initialize some product prices (can be loaded from a database/file in a real app)
         productPrices.put("P001", 1200.00);
         productPrices.put("P002", 75.00);
         productPrices.put("P003", 250.00);
-        productPrices.put("P004", 300.00);
-        productPrices.put("P005", 500.00);
-        productPrices.put("P006", 25.00);
+     
 
         productCatalog.put("P001", new Product("P001", "Laptop", 1200.00));
         productCatalog.put("P002", new Product("P002", "Keyboard", 75.00));
         productCatalog.put("P003", new Product("P003", "Desk Chair", 250.00));
-        productCatalog.put("P004", new Product("P004", "Monitor", 300.00));
-        productCatalog.put("P005", new Product("P005", "Dining Table", 500.00));
-        productCatalog.put("P006", new Product("P006", "Mouse", 25.00));
+
     }
 
     // Add item to cart
@@ -66,7 +57,6 @@ public class ShoppingCart {
         System.out.println("Added " + quantity + " of " + product.getName() + " to cart.");
     }
 
-    // Remove item from cart
     public void removeItem(String productId) {
         if (!itemsInCartLinked.containsKey(productId)) {
             System.out.println("Product with ID " + productId + " not in cart.");
@@ -81,9 +71,7 @@ public class ShoppingCart {
         System.out.println("Removed product " + product.getName() + " from cart.");
     }
 
-    // Display items in cart (insertion order)
     public void displayCartLinkedHashMap() {
-        System.out.println("\n--- Shopping Cart (Insertion Order) ---");
         if (itemsInCartLinked.isEmpty()) {
             System.out.println("Cart is empty.");
             return;
@@ -102,9 +90,7 @@ public class ShoppingCart {
         System.out.printf("Total: $%.2f%n", total);
     }
 
-    // Display items in cart (sorted by price)
     public void displayCartTreeMap() {
-        System.out.println("\n--- Shopping Cart (Sorted by Price) ---");
         if (itemsInCartTree.isEmpty()) {
             System.out.println("Cart is empty.");
             return;
@@ -120,7 +106,6 @@ public class ShoppingCart {
         System.out.printf("Total: $%.2f%n", total);
     }
 
-    // Calculate total price of items in cart
     public double calculateTotalPrice() {
         double total = 0;
         for (Map.Entry<String, Integer> entry : itemsInCartLinked.entrySet()) {
@@ -137,13 +122,12 @@ public class ShoppingCart {
     public static void main(String[] args) {
         ShoppingCart cart = new ShoppingCart();
 
-        System.out.println("--- Shopping Cart Simulation ---");
 
-        cart.addItem("P001", 1); // Laptop
-        cart.addItem("P006", 2); // Mouse
-        cart.addItem("P003", 1); // Desk Chair
-        cart.addItem("P002", 1); // Keyboard
-        cart.addItem("P006", 1); // Another Mouse
+        cart.addItem("P001", 1); 
+        cart.addItem("P006", 2);
+        cart.addItem("P003", 1); 
+        cart.addItem("P002", 1); 
+        cart.addItem("P006", 1); 
 
         cart.displayCartLinkedHashMap();
         cart.displayCartTreeMap();

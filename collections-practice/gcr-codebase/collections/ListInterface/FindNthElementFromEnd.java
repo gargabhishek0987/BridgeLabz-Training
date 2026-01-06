@@ -4,18 +4,14 @@ import java.util.LinkedList;
 
 public class FindNthElementFromEnd {
 
-    // Method to find the Nth element from the end of a singly linked list
     public static <T> T findNthFromEnd(LinkedList<T> list, int n) {
         if (list == null || list.isEmpty() || n <= 0) {
             throw new IllegalArgumentException("List cannot be null or empty, and n must be a positive integer.");
         }
 
-        // Use two pointers: fast and slow
-        // Move fast pointer n steps ahead
-        // Then move both pointers until fast reaches the end
-        // When fast reaches the end, slow will be at the Nth element from the end
+      
 
-        T[] array = (T[]) list.toArray(); // Convert LinkedList to array for easier indexing
+        T[] array = (T[]) list.toArray(); 
         if (n > array.length) {
             throw new IllegalArgumentException("N is greater than the size of the list.");
         }
@@ -39,7 +35,6 @@ public class FindNthElementFromEnd {
             System.out.println("Error: " + e.getMessage());
         }
 
-        System.out.println("\n----------------------------------------\n");
 
         LinkedList<Integer> list2 = new LinkedList<>();
         list2.add(10);
@@ -56,7 +51,6 @@ public class FindNthElementFromEnd {
             System.out.println("Error: " + e.getMessage());
         }
 
-        System.out.println("\n----------------------------------------\n");
 
         LinkedList<Character> list3 = new LinkedList<>();
         list3.add('X');
@@ -72,7 +66,6 @@ public class FindNthElementFromEnd {
             System.out.println("Error: " + e.getMessage());
         }
 
-        System.out.println("\n----------------------------------------\n");
 
         LinkedList<String> emptyList = new LinkedList<>();
         int n4 = 1;
@@ -84,7 +77,6 @@ public class FindNthElementFromEnd {
             System.out.println("Error: " + e.getMessage());
         }
 
-        System.out.println("\n----------------------------------------\n");
 
         LinkedList<String> singleElementList = new LinkedList<>();
         singleElementList.add("Only");
@@ -97,7 +89,6 @@ public class FindNthElementFromEnd {
             System.out.println("Error: " + e.getMessage());
         }
 
-        System.out.println("\n----------------------------------------\n");
 
         LinkedList<String> list6 = new LinkedList<>();
         list6.add("A");

@@ -13,19 +13,17 @@ public class FindKeyWithHighestValue {
             return Optional.empty();
         }
 
-        // Find the maximum value in the map
         Optional<Integer> maxValue = map.values().stream().max(Integer::compare);
 
         if (maxValue.isPresent()) {
-            // Iterate through the map to find the key(s) associated with the maximum value
-            // If multiple keys have the same highest value, this will return the first one encountered
+           
             for (Map.Entry<K, Integer> entry : map.entrySet()) {
                 if (entry.getValue().equals(maxValue.get())) {
                     return Optional.of(entry.getKey());
                 }
             }
         }
-        return Optional.empty(); // Should not be reached if map is not empty and maxValue is present
+        return Optional.empty(); 
     }
 
     public static void main(String[] args) {
@@ -40,7 +38,6 @@ public class FindKeyWithHighestValue {
         Optional<String> topStudent = findKeyWithHighestValue(studentScores);
         topStudent.ifPresent(s -> System.out.println("Student with highest score: " + s));
 
-        System.out.println("\n----------------------------------------\n");
 
         Map<Character, Integer> charCounts = new HashMap<>();
         charCounts.put('a', 5);
@@ -52,14 +49,12 @@ public class FindKeyWithHighestValue {
         Optional<Character> topChar = findKeyWithHighestValue(charCounts);
         topChar.ifPresent(c -> System.out.println("Character with highest count: " + c));
 
-        System.out.println("\n----------------------------------------\n");
 
         Map<String, Integer> emptyMap = new HashMap<>();
         System.out.println("Empty Map: " + emptyMap);
         Optional<String> resultEmpty = findKeyWithHighestValue(emptyMap);
         System.out.println("Key with highest value in empty map: " + resultEmpty.orElse("N/A"));
 
-        System.out.println("\n----------------------------------------\n");
 
         Map<String, Integer> singleEntryMap = new HashMap<>();
         singleEntryMap.put("Only", 100);

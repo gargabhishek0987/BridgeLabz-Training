@@ -27,7 +27,6 @@ public class RotateElementsInList {
         rotateList(list1, rotateBy1);
         System.out.println("Rotated List: " + list1);
 
-        System.out.println("\n----------------------------------------\n");
 
         List<String> list2 = new ArrayList<>(Arrays.asList("A", "B", "C", "D", "E", "F"));
         int rotateBy2 = 3;
@@ -35,10 +34,9 @@ public class RotateElementsInList {
         rotateList(list2, rotateBy2);
         System.out.println("Rotated List: " + list2);
 
-        System.out.println("\n----------------------------------------\n");
 
         List<Double> list3 = new ArrayList<>(Arrays.asList(1.1, 2.2, 3.3, 4.4));
-        int rotateBy3 = -1; // Rotate left by 1
+        int rotateBy3 = -1; 
         System.out.println("Original List: " + list3 + ", Rotate by: " + rotateBy3);
         rotateList(list3, rotateBy3);
         System.out.println("Rotated List: " + list3);
