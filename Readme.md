@@ -1,55 +1,150 @@
-# learning
-##  Developer
-- Name: Abhishek garg
-## Daily Progress Log
+BridgeLabz - Training
+Week 1 - Core Java
+Day 1 - Programming Elements
+Gone through some basic terminal commands. All java basics of writting code in java
 
+Five LeetCode problems solved: Github Path URL
 
-Week 1:
-Location of work : core-java-practice/gcr-codebase/programming-elements
+Number with Unique Digits
+Longest Substring Without Repeating Characters
+Surrounded Regions
+Three Sum
+Predict the Winner
+Day 2 - Java Control Flows
+Java Control Flows
+Java boolean Data Type
+Boolean Expressions
+Logical Operators
+if Conditional Statement along with else if and final else statement
+Java loops - for and while
+Java break and continue statement
+Java switch Statement
+Day 3 - Java Arrays
+Java Arrays
+Create an Array
+Access an Array
+Accessing using for loop
+Modifying an Array
+Using length property of array
+Java Multi-demensional Array
+Java 2 Dimensional Array (Matrix)
+Accessing, finding size, etc of Multi-Dimensional Array
+Using Java System error() message and exit() method
+Day 4 - Java Strings
+Java Strings
+Create Strings
+Use of "" Escape Sequence
+Take String Input
+String Arrays
+String as Method Parameters
+String Class Built-In Methods
+ASCII Character Codes
+Java Exceptions
+Java Exception Hierarchy
+Java Exception Types
+java.lang.RuntimeException or Unchecked Exceptions
+Checked Exceptions
+Day 5 - Java Methods
+User Defined Methods
+Using Methods Multiple Times
+Making Methods more Dynamic
+Recursive Methods
+Java Static Methods
+Java Standard Library Methods
+Week - 2 Object Oriented Programming
+Day 1 - Object Oriented Fundamentals
+Java class and objects Introduction with some basics codes
 
-• 16-Dec-2025 (Tuesday):
-Installed Git and completed initial setup. Learned the basics of Git and GitHub, understood version control and repositories, and practiced basic Git commands such as git init, git status, git add, and git commit.
-• 17-Dec-2025 (Wednesday):
-Created a GitHub repository and connected the local project to a remote repository. Understood the concept of remote repositories and practiced important Git commands including git remote, git branch, git push, and git pull.
-• 18-Dec-2025 (Thrusday):
-Practiced Java Fundamentals and basic problem-solving questions. Solved programs related to variables, data types, arithmetic operations, unit conversions, profit and loss calculations, discounts, user input using Scanner, basic calculator operations, geometry-based problems, and logical problems such as maximum number of handshakes.
+class
+objects
+Introduction to four pillars of OOPs
+Data abstraction
+Encapsulation
+Polymorphism
+Inheritance
+Day 2 - Constructors
+Java Constructors,
 
-• 19-Dec-2025 (Friday):
-Location of work : core-java-practice/gcr-codebase/control-flow
-Studied Java Control Flow concepts and worked Practiced and implemented programs using the following concepts:
-* Java Control Flow statements
-* Boolean data type and boolean expressions
-* Logical operators
-* if, else if, and else conditional statements
-* Loops (for and while)
-* break and continue statements
-* switch statement
-Followed best programming practices, including:
-* Declaring all values as variables (fixed values, user inputs, and results)
-* Using proper program names and class names
-* Maintaining correct indentation
-* Adding comments for each logical block (variables, conditions, loops)
-* Applying proper variable naming conventions
-
-• 20-Dec-2025 (Saturday):
-Location of work : core-java-practice/gcr-codebase/arrays
-Studied Java Arrays and Multi-Dimensional Arrays. Practiced creating, accessing, modifying, and iterating arrays using loops and the length property. Solved Level 1, Level 2, and Level 3 lab practice problems including employee bonus calculation, youngest and tallest among friends, largest and second-largest digit using arrays with dynamic resizing, reversing a number, BMI calculation using 1D and 2D arrays, student marks percentage and grade calculation, digit frequency, voting eligibility check, number analysis (positive, negative, even, odd), multiplication tables, sum of user-entered values, mean height calculation, odd and even number separation, factor finding with dynamic arrays, copying 2D array to 1D array, and FizzBuzz implementation.
-
-
-Week 2:
-• 22-Dec-2025 (Monday):
-Location of work : core-java-practice/scenario-based
-Scenario-Based Java Problem Solving
- Practiced real-world scenario-based Java problems using variables, primitive data types, Scanner for input, operators, conditional logic (if, else, switch), loops (for, while, do-while, for-each), and control flow statements (break, continue) while following clean coding practices. Solved scenarios including The Coffee Counter Chronicles and Maya’s BMI Fitness Tracker.
-
-• 23-Dec-2025 (Tuesday): 
-Location of work : core-java-practice/gcr-codebase/java-mathods
-Completed submissions on Java Methods Lab Practices. Practiced user-defined methods, static methods, recursive methods, and standard library methods including Math class while following best programming practices. Solved method-based problems such as simple interest calculation, handshakes computation, triangular park running rounds, number classification, Spring Season check, sum of natural numbers (loop and recursion), smallest and largest of three numbers, quotient and remainder, chocolate distribution, wind chill calculation, trigonometric functions, factor analysis with sum, product and sum of squares, leap year validation, unit conversion utilities, student voting eligibility, youngest and tallest among friends, number comparison, BMI calculation using 2D arrays, quadratic equation roots, and random number analysis using Math functions.
-
-• 24-Dec-2025 (Wednesday):
-Location of work : core-java-practice/gcr-codebase/strings
- Studied Java String Lab Practices. Practiced creating and using strings, escape sequences, taking string input, string arrays, passing strings as method parameters, and working with String class built-in methods. Learned ASCII character codes and Java exception handling concepts including exception hierarchy, checked and unchecked exceptions. Followed best programming practices such as using variables for all values, implementing logic through methods instead of main(), proper naming conventions, and handling exceptions appropriately.
-
-• 26-Dec-2025 (Friday): 
-Location of work : OOPs/gcr-codebase
-Practiced Object-Oriented Programming (OOPs) concepts including classes and objects, constructors, access modifiers, static vs non-static methods, types of methods, types of constructors, and types of variables. Also studied and implemented core OOP principles such as inheritance, polymorphism, interfaces, and encapsulation through practice programs.
+Instance vs. Class Variables,
+Access Modifiers Concepts
+Day 3 - this, static, final, instanceof operator
+this
+static
+final
+instanceof operator
+Eclipse Editor Introduction and use
+Day 4 - Object Modeling, Class Diagram
+Classes vs. Objects in Java
+Class Diagram
+Object Diagrams
+Sequence Diagrams
+Day 5 - Inheritance
+Inheritance
+Single Level Inheritance
+Multilevel Inheritance
+Hierarchical Inheritance
+Key Features of Inheritance
+Method Overriding
+Constructor Inheritance in Java
+Polymorphism and Inheritance
+Access Modifiers and Inheritance
+Day 6 - Encapsulation, Polymorphism, Interface, Abstract Classes
+Encapsulation
+Polymorphism
+Interface
+Abstract Classes
+Week 3 - Data Structures and Algorithm
+Day 1 - Linked List
+Introduction of Data Structure
+Key Features of Data Structures in Java
+Types of Data Structures in Java
+Single Linked List
+Double Linked List
+Circular Linked List
+Day 2 - Stack, Queue and HashMap
+Stack
+Queue
+HashMap and Hashing Function
+Day 3 - Sorting
+Bubble Sort
+Insertion Sort
+Merge Sort
+Quick Sort
+Day 4 - Mutable Strings, Linear Binary Search
+StringBuilder
+StringBuffer
+Linear Search
+Binary Search
+Day 5 - Algorithm Runtime Analysis
+What is Runtime Analysis?
+How much time algorithm takes to run on any input.
+Understanding Big-O Notation
+Generates worst case time comlexity.
+Time Complexity Analysis
+Space Complexity Analysis
+Best, Worst, and Average Case Complexities
+Week 4 - Java Collections
+Day 1 - Java Generics
+Introduction to Generics
+Type Parameters
+Generic Classes
+Generic Methods
+Bounded Type Parameters
+Wildcards
+Day 2 - Java Collections
+Overview of Collections Framework
+What is the Collections Framework?
+Dynamic size Data structure like ArrayList for better data handling.
+Hierarchy of Collections Framework
+List Interface and Implementing Classes
+Set Interface and Implementing Classes
+Queue and Deque Interfaces
+Map Interface and Its Implementations
+Day 3 - Java I/O Streams
+Java I/O Streams
+Types of Streams
+File Streams
+Object Streams
+ByteArray Streams
+Buffered Streams
+Reader and Writer
