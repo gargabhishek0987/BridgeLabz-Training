@@ -7,7 +7,7 @@ import java.util.List;
 public class CSVtoJava {
     public static void main(String[] args) {
 
-        String path = "students.csv";
+        String path = "io-programming-practice\\gcr-codebase\\csv-file-handling\\convertCSVtoJavaObject\\Strudents.csv";
         List<Student> students = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {

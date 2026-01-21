@@ -10,6 +10,11 @@ public class Student {
         this.age = age;
         this.marks = marks;
     }
+    @Override
+public String toString() {
+    return "Student [ID=" + id + ", Name=" + name + ", Age=" + age + ", Marks=" + marks + "]";
+}
+
 
    
 }
