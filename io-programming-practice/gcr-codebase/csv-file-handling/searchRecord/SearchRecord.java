@@ -26,16 +26,11 @@ public class SearchRecord {
                     System.out.println("Salary "+ col[3].trim());
                     found = true; 
                 }
-
-              
                 }  if(!found){
                     System.out.println("Record not found");
 
             }
             
-
-
-
         }catch(IOException e){
             e.printStackTrace();
     }
