@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="core-java-practice/gcr-codebase/Programming-elements"/>
+	<classpathentry kind="src" path="core-java-practice/leet-code-codebase"/>
+	<classpathentry kind="src" path="core-java-practice/gcr-codebase/control-flow"/>
+	<classpathentry kind="src" path="core-java-practice/gcr-codebase/arrays"/>
+	<classpathentry kind="src" path="core-java-practice/gcr-codebase/methods"/>
+	<classpathentry kind="src" path="core-java-practice/gcr-codebase/extras"/>
+	<classpathentry kind="src" path="oops"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
